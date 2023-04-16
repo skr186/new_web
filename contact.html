@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <h1>My Contact Page</h1>
+    <a href="index.html">Portfolio</a>
+
+    <ul type="none">
+      <li>&rArr;<a href="https://www.linkedin.com/in/sakar-shrestha-306797145/" target="blank">LinkedIn</a></li><br>
+
+      <li>&rArr;<a href="https://www.facebook.com/sKr186" target="blank">Facebook</a></li><br>
+
+      <li>&rArr;<a href="https://www.instagram.com/saccarcrestha/" target="blank">Instagram</a></li>
+    </ul>
+
+    <form action="mailto:sakar1994@gmail.com?subject=Hi" style="width: 30%;" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Your Info</legend>
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" placeholder="Name" required><br>
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" required placeholder="Email" name="email" id="email"><br>
+        </div>
+        <div>
+          <span>Gender: </span>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <label for="date">Date: </label>
+          <input type="date" required id="date" name="date">
+        </div>
+        <div>
+          <span>Hobbies: </span>
+
+          <input type="checkbox" id="Dance" name="hobbies" value="dance" checked>
+          <label for="dance">Dance</label>
+          <input type="checkbox" id="Sing" name="hobbies" value="sing">
+          <label for="sing">Sing</label>
+          <input type="checkbox" id="play" name="hobbies" value="play">
+          <label for="play">Play</label>
+        </div>
+
+        <div>
+          <label for="country">Select Country: </label>
+          <select name="country" id="country">
+            <option value="nepal">Nepal</option>
+            <option value="china">China</option>
+            <option value="india">India</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="Coffee">Select Coffee: </label>
+          <select name="coffee" id="coffee">
+            <optgroup label="Hard Coffee">
+              <option value="nepal">Nepal</option>
+              <option value="china">China</option>
+              <option value="india">India</option>
+            </optgroup>
+            <optgroup label="Cold Coffee">
+              <option value="nepal">Nepal</option>
+              <option value="china">China</option>
+              <option value="india">India</option>
+            </optgroup>
+          </select>
+        </div>
+
+
+
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </fieldset>
+
+    </form>
+
+  </body>
+
+</html>
