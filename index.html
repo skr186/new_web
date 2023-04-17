@@ -7,15 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web-css</title>
     <style>
-      * {
+      /* * {
         color: green;
-      }
+      } */
 
-      h1 {
+      /* h1 {
         color: brown;
       }
 
       p {
+        color: blue;
+      } */
+
+      #head h1 {
+        color: yellowgreen;
+      }
+
+      .box1 {
+        color: orange;
+      }
+
+      .box1 h1 {
+        color: rgb(119, 36, 187);
+      }
+
+      .box2 {
+        color: blue;
+      }
+
+      .box3+p {
+        color: blueviolet;
+      }
+
+      .box3>h1 {
+        color: lime;
+      }
+
+      .box3:hover {
+        background-color: green;
+      }
+
+      li:nth-child(2n+1) {
+        color: pink;
+      }
+
+      li:nth-child(2n+1):hover {
+        color: blue;
+      }
+
+      .paray p:hover::before {
+        content: 'Hello ';
+        font-weight: bold;
+        font-size: 30px;
         color: blue;
       }
     </style>
@@ -24,12 +67,51 @@
   </head>
 
   <body>
+    <header id="head">
+      <h1>Sample Logo</h1>
+    </header><br><br><br>
 
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium porro similique dolore natus, fugiat
-      quo molestiae quam, a, sit officia quibusdam asperiores exercitationem fugit quidem magni quis neque ullam aperiam
-      dignissimos est accusamus esse? Voluptatem ipsum fuga dicta reiciendis aperiam distinctio placeat commodi
-      possimus, fugit dolores! Quis, dolore ex!</p>
+    <div class="box1">
+      <h1>Sample Article</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium porro similique dolore natus, fugiat
+        quo molestiae quam, a, sit officia quibusdam asperiores exercitationem fugit quidem magni quis neque ullam
+        aperiam
+        dignissimos est accusamus esse? Voluptatem ipsum fuga dicta reiciendis aperiam distinctio placeat commodi
+        possimus, fugit dolores! Quis, dolore ex!</p>
+    </div><br><br><br>
+
+    <div class="box2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur dolorem nihil perferendis sed
+        velit, expedita vitae autem quaerat iusto?</p>
+    </div>
+
+    <div class="box3">
+      <h1>sample</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit perferendis possimus earum.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugit magnam eius provident repudiandae amet
+        magni explicabo repellendus vitae hic.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quaerat cumque placeat quasi alias eligendi
+        reprehenderit aliquid sit quos blanditiis.</p>
+    </div>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet consectetur.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li>Lorem ipsum dolor sit.</li>
+    </ul>
+
+    <div class="paray">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis officiis quia rem quos ducimus
+        molestias, architecto non odio libero.</p>
+
+    </div>
+
+
   </body>
 
 </html>
