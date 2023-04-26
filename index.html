@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Grid</title>
+
+
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inconsolata', monospace;
+        background-color: rgb(12, 233, 233);
+      }
+
+      header {
+        padding: 10px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
+
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+
+      nav {
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
+
+
+
+      .display-section {
+        margin: 10px 0 20px 0;
+        padding: 10px;
+        gap: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+
+      .display-content {}
+
+      .display-image img {
+        width: 100%;
+
+      }
+
+      .article-section {
+        padding: 10px;
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+      }
+
+      .article {
+        padding: 10px, 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      }
+
+      .article p {
+        padding: 15px;
+      }
+
+      .article h3 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 813px) {
+        .display-section {
+          grid-template-columns: 1fr;
+        }
+
+        .article-section {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 350px) {
+        nav {
+          visibility: hidden;
+        }
+      }
+
+      @media (max-width: 514px) {
+        .article-section {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* @media (max-width: 337px) {
+        .article-section {
+          grid-template-columns: 1fr;
+        }
+      } */
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <h1> <a href="index.html">Sample Grid</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+
+    <div class="display-section">
+      <div class="display-image">
+        <img
+          src="https://images.unsplash.com/photo-1681740351761-2035384d9fd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+          alt="lake">
+      </div>
+      <div class="display-content">
+        <h2>Sample Grid</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem ad voluptatibus vel tempora ratione
+          eveniet. Ipsam vitae dolorum, consequatur distinctio consectetur sequi magnam odio quos deleniti ipsum quasi
+          quo. Quisquam assumenda qui, perferendis tempore mollitia dolores voluptatem possimus cum dolorem atque nemo
+          beatae culpa quis similique recusandae inventore officia aliquam pariatur! Quidem, nihil ab iure dolor nulla
+          obcaecati blanditiis.</p>
+      </div>
+    </div>
+
+
+    <div class="article-section">
+      <div class="article">
+        <h3>Article 1</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At porro perspiciatis neque a aspernatur cumque
+          rerum distinctio sit quisquam excepturi est vero nemo, veritatis animi voluptas debitis sequi necessitatibus
+          laboriosam sint nam molestias. Quae in rem voluptates. Sed vitae cupiditate deleniti, reprehenderit suscipit
+          tempora ab nobis? Mollitia assumenda commodi inventore?</p>
+      </div>
+
+      <div class="article">
+        <h3>Article 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quidem expedita numquam eligendi fuga
+          quaerat exercitationem quo quia, enim molestiae repudiandae voluptatum unde delectus quis ipsum sequi
+          explicabo quasi ex, corrupti hic! Veritatis reiciendis vitae eveniet non accusamus, ab eligendi! Ad, aut. Quis
+          quibusdam nulla deserunt? Vitae similique repellat molestias, accusamus inventore eaque nihil sequi officiis
+          nobis, asperiores aliquid perspiciatis doloremque rerum quos ut? Officiis consequatur aperiam asperiores
+          maxime error?</p>
+      </div>
+
+      <div class="article">
+        <h3>Article 3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa a incidunt harum exercitationem totam sequi,
+          id in praesentium neque? Nesciunt, dignissimos ab. Nesciunt, repellendus perspiciatis dicta sunt et doloribus
+          commodi cum ratione sed aut eligendi maxime quas officiis nam ab!</p>
+      </div>
+    </div>
+
+  </body>
+
+</html>
