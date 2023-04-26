@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        height: 500px;
+        width: 500px;
+        border: 1px solid black;
+
+      }
+
+      .box1 {
+        align-self: center;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(124, 233, 142);
+      }
+
+      .box2 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(211, 121, 121);
+      }
+
+      .box3 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(228, 25, 25);
+      }
+
+      .box4 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(51, 15, 195);
+      }
+
+      .box5 {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(23, 187, 18);
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <div class="box">
+      <div class="box1">One</div>
+      <div class="box2">Two</div>
+      <div class="box3">Three</div>
+      <div class="box4">Four</div>
+      <div class="box5">Five</div>
+    </div>
+
+  </body>
+
+</html>
